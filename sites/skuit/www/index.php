@@ -1,3 +1,3 @@
 <?
-include_once './DZ/index.php';
+include_once 'lab3/variables.php'
 ?>
