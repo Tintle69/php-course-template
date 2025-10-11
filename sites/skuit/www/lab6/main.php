@@ -15,21 +15,21 @@ $product13 = "Роутер TP-Link Archer";
 $product14 = "Веб-камера Logitech C930e";  
 $product15 = "Акустическая система JBL";  
  
-$price1 = 79999.99;  
-$price2 = 64999.00;  
-$price3 = 24999.50;  
-$price4 = 19999.00;  
-$price5 = 2999.99;  
-$price6 = 49999.00;  
-$price7 = 7999.00;  
-$price8 = 7499.99;  
-$price9 = 29999.50;  
-$price10 = 14999.00;  
-$price11 = 6999.99;  
-$price12 = 29999.00;  
-$price13 = 4999.50;  
-$price14 = 9999.00;  
-$price15 = 14999.99;  
+$price1 = 79999;  
+$price2 = 64999;  
+$price3 = 24999;  
+$price4 = 19999;  
+$price5 = 2999;  
+$price6 = 49999;  
+$price7 = 7999;  
+$price8 = 7499;  
+$price9 = 29999;  
+$price10 = 14999;  
+$price11 = 6999;  
+$price12 = 29999;  
+$price13 = 4999;  
+$price14 = 9999;  
+$price15 = 14999;  
   
 $products = [  
     $product1, $product2, $product3, $product4, $product5,  
@@ -56,111 +56,24 @@ $prices = [
     <?php } ?>
 </div>
 
-<? 
-$product1 = "Смартфон Apple iPhone 15";  
-$product2 = "Ноутбук Lenovo ThinkPad";  
-$product3 = "Умные часы Samsung Galaxy Watch";  
-$product4 = "Наушники AirPods Pro";  
-$product5 = "Фитнес-браслет Xiaomi Mi Band";  
-$product6 = "Планшет iPad Air";  
-$product7 = "Внешний жесткий диск Seagate";  
-$product8 = "Геймпад Sony DualSense";  
-$product9 = "Монитор LG UltraWide";  
-$product10 = "Клавиатура Logitech G915";    
- 
-$price1 = 79999.99;  
-$price2 = 64999.00;  
-$price3 = 24999.50;  
-$price4 = 19999.00;  
-$price5 = 2999.99;  
-$price6 = 49999.00;  
-$price7 = 7999.00;  
-$price8 = 7499.99;  
-$price9 = 29999.50;  
-$price10 = 14999.00;    
-  
-$products = [  
-    $product1, $product2, $product3, $product4, $product5,  
-    $product6, $product7, $product8, $product9, $product10
-];  
-  
-$prices = [  
-    $price1, $price2, $price3, $price4, $price5,  
-    $price6, $price7, $price8, $price9, $price10
-];  
-?>
-
-
-<div class="product-list">
-    <h2>Товары и цены</h3>
-
-    <?php for ($i = 0; $i < count ($products); $i++ ) { ?>
-    <div class="product-card">
-        <div class="product-name"><?=$products[$i]?></div>
-        <div class="product-price"><?= $prices[$i]?> ₽</div>
-    </div>
-    <?php } ?>
-</div>
-
-<?
-$product1 = "Игра Монополия";  
-$product2 = "Игра UNO";  
-$product3 = "Диск Одни из нас part.2";  
-$product4 = "Беспроводные наушники Marshal";  
-$product5 = "Sony PlayStation 4";  
-$product6 = "Samsung S9";  
-$product7 = "Наушники bayerdinamick dt 770 pro";  
-$product8 = "Микрофон akg p420";  
-$product9 = "Ноутбук Apple MacBook pro";  
-$product10 = "Клавиатура Marvel";  
-   
-$price1 = 999.99;  
-$price2 = 449.50;  
-$price3 = 5299.75;  
-$price4 = 8349.90;  
-$price5 = 49999.99;  
-$price6 = 7999.00;  
-$price7 = 24999.50;  
-$price8 = 41999.99;  
-$price9 = 199999.99;  
-$price10 = 999.99;  
-   
-$products2 = [  
-    $product1,  
-    $product2,  
-    $product3,  
-    $product4,  
-    $product5,  
-    $product6,  
-    $product7,  
-    $product8,  
-    $product9,  
-    $product10  
-];  
-  
-$prices2 = [  
-    $price1,  
-    $price2,  
-    $price3,  
-    $price4,  
-    $price5,  
-    $price6,  
-    $price7,  
-    $price8,  
-    $price9,  
-    $price10  
-];  
+<?php
+$products2 = [
+    "Смартфон Apple iPhone 15", "Ноутбук Lenovo ThinkPad", "Умные часы Samsung Galaxy Watch", "Наушники AirPods Pro", "Фитнес-браслет Xiaomi Mi Band", "Планшет iPad Air", "Внешний жесткий диск Seagate", "Геймпад Sony DualSense", "Монитор LG UltraWide", "Клавиатура Logitech G915"
+];
+$prices2 = [
+    "79999", "64999", "24999", "19999", "2999", "49999", "7999", "7499", "29999", "14999"
+]
 ?>
 
 <div class="product-list">
-    <h2>Товары и цены 3</h3>
+    <h2>Товары и цены</h2>
 
-    <?php for ($i = 0; $i < count ($products2); $i++ ) { ?>
+    <?php for ($i = 0; $i < count($products2); $i++) { ?>
     <div class="product-card">
-        <div class="product-name"><?=$products2[$i]?></div>
-        <div class="product-price"><?= $prices2[$i]?> ₽</div>
+        <div class="product-name"><?= $products2[$i]?></div>
+    <div class="product-price"><?= $prices2[$i]?> ₽</div>
     </div>
-    <?php } ?>
+<?php } ?>
 </div>
 
 <?php
@@ -194,12 +107,43 @@ $goods = [
 ?>
 
 <div class="product-list">
-    <h2>Товары и цены 4</h3>
+    <h2>Товары и цены 4 </h3>
 
     <?php foreach ($goods as $item) { ?>
     <div class="product-card">
-        <div class="product-name"><?=$item['name']?></div>
-        <div class="product-price"><?= $item['price']?> ₽</div>
+        <div class="product-name"><?= $item['name']?></div>
+        <div class="product-price"><?= $item['price']?></div>
     </div>
+<?php } ?>
+</div>
+<?php
+$goodsRandom = [];
+for ($i = 0; $i < 100; $i++) {
+ $goodsRandom []= ['name' => $products[array_rand($products)], 'price' => $prices[array_rand($prices)]];
+}
+
+?>
+<div class="product-list">
+    <h2>Товары и цены 5 </h3>
+
+    <?php foreach ($goodsRandom as $item) { ?>
+    <div class="product-card">
+        <div class="product-name"><?= $item['name']?></div>
+        <div class="product-price"><?= $item['price']?></div>
+    </div>
+<?php } ?>
+</div>
+<?php
+?>
+<div class="product-list">
+    <h2>Товары и цены 6</h3>
+
+    <?php foreach ($goodsRandom as $item) { ?>
+        <?php if (($item['price'] > 10000) and ($item['price'] < 15000)){?>
+    <div class="product-card">
+        <div class="product-name"><?= $item['name']?></div>
+        <div class="product-price"><?= $item['price']?></div>
+       </div>
     <?php } ?>
+<?php } ?>
 </div>
